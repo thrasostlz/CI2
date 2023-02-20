@@ -1,0 +1,144 @@
+/* Estilos para el login */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.login-box {
+  width: 550px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  color: #333;
+}
+
+.login-box h2 {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 30px;
+}
+
+.login-box form {
+	width: 100%;
+	padding: 20px;
+	background: rgba(0, 0, 0, 0.7);
+	box-sizing: border-box;
+	box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+}
+
+.user-box {
+	position: relative;
+}
+
+.user-box input {
+	width: 100%;
+	padding: 30px 0;
+	font-size: 26px;
+	color: #fff;
+	margin-bottom: 30px;
+	border: none;
+	border-bottom: 1px solid #fff;
+	outline: none;
+	background: transparent;
+}
+
+.user-box label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #fff;
+	pointer-events: none;
+	transition: 0.5s;
+}
+
+.user-box input:focus ~ label,
+.user-box input:valid ~ label {
+	top: -20px;
+	left: 0;
+	color: #03a9f4;
+	font-size: 12px;
+}
+
+input[type="submit"] {
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #fff;
+	background: #03a9f4;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+	font-size: 18px;
+	transition: transform 0.2s ease-in-out; /* Agregamos la transición */
+}
+
+input[type="submit"]:hover {
+  transform: scale(1.05); /* Escalamos el botón al pasar el mouse */
+}
+
+
+/* Estilos generales para el menú */
+
+
+/* Estilos generales para el menú */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 30px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu li {
+  margin: 0 10px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.menu a:hover {
+  background-color: gray;
+  color: #333;
+}
+
+/* Estilos para el menú en versión móvil */
+@media screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+  
+  .menu {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .menu li {
+    margin: 10px 0;
+  }
+}
